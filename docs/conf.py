@@ -2,7 +2,7 @@
 """Configure Sphinx."""
 # pylint: skip-file
 #
-# rayvision_utils documentation build configuration file, created by
+# rayvision_api documentation build configuration file, created by
 # sphinx-quickstart on Fri Jan 06 15:29:00 2017.
 #
 # This file is execfile()d with the current directory set to its
@@ -17,12 +17,11 @@
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-import os
-import sys
-sys.path.insert(0, os.path.abspath('../'))
-
+#
 import sphinx_rtd_theme
-from recommonmark.parser import CommonMarkParser
+import sys
+import os
+sys.path.insert(0, os.path.abspath('../'))
 
 # -- General configuration ------------------------------------------------
 
@@ -40,27 +39,26 @@ extensions = [
     'sphinx.ext.coverage',
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
-    'sphinx.ext.napoleon'
+    'sphinx.ext.napoleon',
+    'sphinx_automodapi.automodapi',
 ]
+
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
-
-source_parsers = {
-    '.md': CommonMarkParser,
-}
-source_suffix = ['.rst', '.md']
-# source_suffix = '.rst'
+#
+# source_suffix = ['.rst', '.md']
+source_suffix = '.rst'
 
 # The master toctree document.
 master_doc = 'index'
 
 # General information about the project.
-project = u'rayvision_utils'
-copyright = u'2018 Rayvision Core Dev Team'
+project = u'rayvision_sync'
+copyright = u'2019 Rayvision Core Dev Team'
 author = u''
 
 # The version info for the project you're documenting, acts as replacement for
@@ -117,7 +115,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'rayvision_mayadoc'
+htmlhelp_basename = 'rayvision_apidoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -144,7 +142,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'rayvision_utils.tex', u'rayvision_utils Documentation',
+    (master_doc, 'rayvision_sync.tex', u'rayvision_sync Documentation',
      u'', 'manual'),
 ]
 
@@ -154,7 +152,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'rayvision_utils', u'rayvision_utils Documentation',
+    (master_doc, 'rayvision_sync', u'rayvision_sync Documentation',
      [author], 1)
 ]
 
@@ -165,9 +163,9 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'rayvision_utils', u'rayvision_utils Documentation',
-     author, 'rayvision_utils',
-     'Shame on Hao Long.',
+    (master_doc, 'rayvision_sync', u'rayvision_sync Documentation',
+     author, 'rayvision_sync',
+     'Renderbus  dan',
      'Miscellaneous'),
 ]
 

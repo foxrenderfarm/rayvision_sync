@@ -1,18 +1,17 @@
-.. rayvision_utils documentation master file, created by
-   sphinx-quickstart on Wed Nov  6 09:36:25 2019.
+.. rayvision_sync documentation master file, created by
+   sphinx-quickstart on Tue Nov  5 10:38:44 2019.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to rayvision_utils's documentation!
-===========================================
+Welcome to rayvision_sync's documentation!
+==========================================
 
 .. toctree::
    :maxdepth: 4
-   :caption: 通用方法包（utils）:
 
-   rayvision_utils/first_look.rst
-   rayvision_utils/installation_guide.rst
-   rayvision_utils/modules.rst
+   rayvision_sync/first_look.rst
+   rayvision_sync/installation_guide.rst
+   rayvision_sync/modules.rst
 
 
 Indices and tables
